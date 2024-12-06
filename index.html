@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>VISIO</title>
+</head>
+
+<body>
+  <!-- Navigation menu  -->
+  <nav>
+    <div id="myNav" class="overlay">
+      <img src="./images/Path 1.png" alt="" class="scale">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <img src="/images/Path 1.png" alt="Visio LOGO" id="visio-nav-logo" />
+    <a id="burger-menu" onclick="openNav()">
+      <img src="./images/burger--menu.png" alt="">
+    </a>
+  </nav>
+  <main>
+    <section id="main-slider">
+      <!-- Carousel -->
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="./images/sergey-pesterev-FRMt.png" class="img" style="width: 100%" />
+          <div class="text">
+            <p>LOOK BEYOND THE ORDINARY</p>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="./images/ImageSlider2.jpg" class="img" style="width: 100%" />
+          <div class="text">
+            <p>WE LEAVE NO STONE UNTURNED</p>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="./images/ImageSlider3.jpg" class="img" style="width: 100%" />
+          <div class="text">
+            <p>WE CAN AND WE WILL</p>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="./images/ImageSlider4.jpg" class="img" style="width: 100%" />
+          <div class="text">
+            <p>VISIO: GET THE VISION</p>
+          </div>
+        </div>
+
+        <div class="dot-div">
+          <span class="dot" onclick="currentSlide(1)">
+            <img src="./images/slider-dots.png" alt="" class="dot-img">
+          </span>
+          <span class="dot" onclick="currentSlide(2)">
+            <img src="./images/slider-dots.png" alt="" class="dot-img">
+          </span>
+          <span class="dot" onclick="currentSlide(3)">
+            <img src="./images/slider-dots.png" alt="" class="dot-img">
+          </span>
+          <span class="dot" onclick="currentSlide(4)">
+            <img src="./images/slider-dots.png" alt="" class="dot-img">
+          </span>
+        </div>
+
+        <!-- <a class="next" onclick="plusSlides(1)">></a> -->
+        <img src="./images/Path 43 (1).png" alt="" class="next" onclick="plusSlides(1)">
+
+
+      </div>
+      <br />
+    </section>
+    <section id="home-intro">
+      <!-- Below Carousel -->
+      <div id="information">
+
+        <div class="p-info">
+          <p>Visio is an investment management firm initially founded by Patrice Moyal in 2003. The nimble, highly
+            focused and dynamic team manage assets across listed strategies for a diversified client base that includes
+            some of the world’s largest and most sophisticated investors.
+          </p>
+        </div>
+
+        <div class="info-icon">
+          <img src="./images/asset32.png" alt="" class="info-icon-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Home options -->
+    <section class="home-options">
+      <div class="home-options-1">
+        <div class="box">
+          <img src="./images/Path 26.png" alt="" class="box-img">
+          <p id="p1">THE VISIO DIFFERENCE</p>
+        </div>
+        <div class="box">
+          <img src="./images/Path 26.png" alt="" class="box-img">
+          <p id="p1"> MEET THE VISIO TEAM</p>
+        </div>
+        <div class="box">
+          <img src="./images/Path 26.png" alt="" class="box-img">
+          <p id="p1">OUR FUNDS AND INVESTMENTS</p>
+        </div>
+      </div>
+      <div class="home-options-2">
+        <div class="box2">
+          <p id="p">HEDGE FUNDS</p>
+          <img src="./images/Path 26.png" alt="" class="box-img-2">
+        </div>
+        <div class="box2">
+          <p id="p">UNIT TRUSTS</p>
+          <img src="./images/Path 26.png" alt="" class="box-img-2">
+        </div>
+        <div class="box2">
+          <p id="p" >SEGEREGATED MANDATES</p>
+          <img src="./images/Path 26.png" alt="" class="box-img-2">
+        </div>
+       
+        <div class="box2">
+          <p id="p">AFRICA FUNDS</p>
+          <img src="./images/Path 26.png" alt="" class="box-img-2">
+        </div>
+        <div class="box2">
+          <p id="p">FUND PERFORMANCE</p>
+          <img src="./images/Path 26.png" alt="" class="box-img-2">
+        </div>
+        <div class="box2">
+          <p id="p">RISK MANAGEMENT</p>
+          <img src="./images/Path 26.png" alt="" class="box-img-2">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="inner">
+      <p>&#169;Visio. All Rights Reservesed</p>
+    </div>
+  </footer>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

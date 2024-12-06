@@ -1,0 +1,520 @@
+/* Navigation bar */
+nav {
+  width: 100%;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 5px 2px #e2dede;
+  background-color: white;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+}
+/* Logo */
+#visio-nav-logo {
+  width: 10%;
+  margin-left: 10%;
+}
+
+/* Burger Menu */
+#burger-menu {
+  cursor: pointer;
+  width: 7%;
+  height: auto; 
+  display: flex; 
+  flex-direction: column; /* Align spans vertically */
+  justify-content: space-between;
+  align-items: center; 
+  margin-right: 8%;
+}
+
+#burger-menu img {
+  background-color: white;
+  height: 40%; /* Example height for lines */
+  width: 30%; /* Span width adjusts to parent */
+}
+
+/* Hover effect for burger menu */
+#burger-menu:hover {
+  scale: 1.3;
+  transition: 0.4s;
+}
+
+/* Overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: #061C2C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* section */
+section {
+  padding: 0;
+}
+
+#main-slider {
+  margin-top: 12%;
+  margin-bottom: 8%;
+}
+
+
+/* Carousel */
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  padding: auto;
+  height: 70%;
+}
+@media (max-width: 1042px) {
+  .slideshow-container {
+   margin-top: 15%;
+  }
+}
+@media (max-width: 723px) {
+  .slideshow-container {
+   margin-top: 20%;
+  }
+}
+@media (max-width: 565px) {
+  .slideshow-container {
+   margin-top: 25%;
+  }
+}
+@media (max-width: 448px) {
+  .slideshow-container {
+   margin-top: 30%;
+  }
+}
+@media (max-width: 362px) {
+  .slideshow-container {
+   margin-top: 40%;
+  }
+}
+@media (max-width: 448px) {
+  .slideshow-container {
+   margin-top: 30%;
+  }
+}
+@media (max-width: 371px) {
+  .slideshow-container {
+   margin-top: 40%;
+  }
+}
+
+
+.mySlides {
+  height: 100%;
+}
+
+.mySlides .text {
+  position: absolute;
+  left: 0;
+}
+
+.mySlides .img {
+  max-width: 87vw;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  /* Centers the image horizontally */
+}
+
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  /* Ensures absolute positioning */
+  top: 40%;
+  /* Vertically centers the button */
+  left: 88%;
+  width: 3.5%;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 17%;
+  /* Positions the button on the right edge */
+  border-radius: 3px 0 0 3px;
+}
+
+/* Optional: Hover effect for better UX */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adds a semi-transparent background on hover */
+}
+
+/* The dots/bullets/indicators */
+.dot-div {
+  text-align: center;
+  z-index: 3;
+  right: 10%;
+  bottom: 4%;
+  position: absolute;
+}
+
+.dot {
+  width: 22px;
+  height: 23px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 1px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.1s ease-in-out 0.3s;
+}
+
+.active,
+.dot:hover {
+  opacity: 0.39;
+  transform: rotate(150deg);
+  transition: 0.3s ease-in-out 0.3s;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  padding: 2%;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 45%;
+  text-align: center;
+  background-color: blue;
+  width: 400px;
+  animation: slide-in 0.8s ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .text {
+    width: 50%;
+    padding: 10px;
+    top: 36%;
+  }
+
+  p {
+    font-size: smaller;
+  }
+  
+  .dot {
+    display: none;
+  }
+}
+
+@media (max-width: 486px) {
+  .text {
+    width: 50%;
+    padding: 0px;
+    top: 34%;
+  }
+
+  p {
+    font-size: smaller;
+  }
+}
+
+/* Slide animation */
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-150%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+
+/* home-intro*/
+
+#information {
+  display: flex; /* Activates flexbox layout */
+  justify-content: space-between; /* Creates space between .p-info and .info-icon */
+  align-items: center; /* Ensures vertical alignment */
+  margin: 0 auto; /* Centers the flex container if needed */
+  padding: 0 100px 100px 100px; /* Optional spacing inside the container */
+}
+
+.p-info {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex: 1; /* Allows .p-info to take available space */
+  font-size: 130%;
+  color: #326387;
+  width: 60%;
+}
+
+.info-icon {
+  width: 40%;
+  height: 100%;
+  flex-shrink: 0; /* Prevents the icon from shrinking */
+  display: flex; /* Makes sure image aligns properly */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.info-icon-img {
+  max-width: 100%; /* Adjusts the image size */
+  height: auto; /* Maintains aspect ratio */
+  margin-left: 17%;
+  align-self: center;
+}
+
+@media (max-width: 870px) {
+  #information {
+    display: flex;
+    flex-wrap: wrap; /* Allows child elements to stack */
+    padding: 0 90px 21px 90px; 
+    margin-bottom: 7%;
+  }
+  .p-info {
+    width: 100%; /* Full width for paragraph */
+    margin: 0 0 20px 0; /* Add bottom margin for spacing */
+    text-align: justify; /* Optional for better text alignment */
+    font-size: large%;
+  }
+
+  .info-icon {
+    width: 100%; /* Full width for centering */
+    height: 50%;
+    text-align: center; /* Centers the image within its container */
+    margin: 0; /* Reset margins */
+  }
+
+  .info-icon-img {
+    width: 70%; /* Prevents image from exceeding container width */
+    height: 30%;
+    margin-left: 30%;
+  }
+}
+
+
+/* Home Options */
+#p1{
+  color: white;
+}
+#p{
+  color: white;
+  font-size: 58%;
+  padding: 2%;
+}
+.home-options-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 90px 10px 90px; 
+}
+
+.home-options-2 {
+  display: flex;
+  justify-content: center;
+  padding: 0 90px;
+  margin-bottom: 4%;
+}
+.home-options .home-options-2 .box2{
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+.home-options .home-options-2 .box2 .box-img-2{
+ width:8%;
+ height: auto;
+ padding-right: 2%;
+}
+.home-options .home-options-1 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100% !important;
+  height: 150px;
+  padding: 0 3.2% 0 3.2% !important;
+}
+
+@media (max-width: 743px) {
+  .home-options-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 3.2% 0 3.2%; 
+  }
+  .home-options-1 .box .box-img {
+    padding: 0 3.2% 0 0 ;
+    align-self: center;
+  }
+  .home-options-1 .box #p1 {
+    padding: 0 3.2% 0 0 ;
+    align-self: center;
+  }
+
+  .home-options-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 3.2% 0 3.2%;
+    margin-bottom: 4%;
+  }
+
+  .home-options .home-options-1 .box {
+    background-color: #061C2C;
+    width: 100% !important;
+    height: 150px;
+    padding: 0 3.2% 0 3.2% !important;
+  }
+  .home-options .home-options-1 .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  }
+
+  .home-options .home-options-2 .box2 {
+    background-color: #244ac2 !important; /* Overrides other rules */
+    width: 45% !important;
+    height: 10%;
+    margin: 1%;
+  }
+  .home-options .home-options-1 .box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100% !important;
+    height: 150px;
+    padding: 0 3.2% 0 3.2% !important;
+  }
+}
+
+@media (max-width: 1431px) {
+  .home-options .home-options-1 .box {
+    display: flex;
+    align-items: st;
+    width: 100% !important;
+    height: 150px;
+    padding: 0 3.2% 0 3.2% !important;
+  }
+  .home-options .home-options-2 .box2 {
+    background-color: #244ac2;
+    width: 31.33%;
+    margin: 1%;
+  }
+
+  .home-options .home-options-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+}
+
+.home-options-1 .box {
+  background-color: #061C2C;
+  width: 600px;
+  height: 150px;
+  margin: 8px;
+  padding: 0 2%;
+}
+.home-options-1 .box .box-img{
+  width: 10%;
+  height: auto;
+}
+
+.home-options-2 .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #244ac2;
+  width: 400px;
+  height: 80px;
+  margin: 8px;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #53a2da;
+  margin-top: 10%;
+  border-top: 2px solid rgb(218, 208, 208);
+}
